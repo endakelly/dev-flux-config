@@ -10,6 +10,7 @@ spec:
     kind: GitRepository
     name: dev-team
     namespace: dev-team
+  prune: true
   postBuild:
     substitute:
       NAMESPACE: "hello-kubernetes"
