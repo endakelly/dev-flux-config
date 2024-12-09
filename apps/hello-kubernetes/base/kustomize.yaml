@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 10m
-  path: ./apps/hello-kubernetes/${ENVIRONMENT}/${CLUSTER}
+  path: ./apps/hello-kubernetes/staging/base
   postBuild:
     substitute:
       NAMESPACE: "hello-kubernetes"
