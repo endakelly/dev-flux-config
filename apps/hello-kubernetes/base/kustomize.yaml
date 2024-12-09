@@ -5,12 +5,12 @@ metadata:
   namespace: dev-team
 spec:
   interval: 10m
-  path: ./apps/hello-kubernetes/staging/base
+  path: ./apps/hello-kubernetes/${ENVIRONMENT}/base
   sourceRef:
     kind: GitRepository
     name: dev-team
     namespace: dev-team
-  prune: true
+  # prune: true
   postBuild:
     substitute:
       NAMESPACE: "hello-kubernetes"
