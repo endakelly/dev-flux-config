@@ -6,4 +6,5 @@ metadata:
 spec:
   postBuild:
     substitute:
-      WORKLOAD_IDENTITY_ID: "abcd-1234"
+      NAMESPACE: "hello-kubernetes"
+      WI_NAME: hello-kubernetes
