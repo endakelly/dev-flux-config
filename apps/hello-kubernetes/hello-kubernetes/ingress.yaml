@@ -1,7 +1,7 @@
 kind: Ingress
 metadata:
   name: hello-kubernetes
-  namespace: apps
+  namespace: hello-kubernetes
   annotations:
     traefik.ingress.kubernetes.io/router.tls: "true"
 spec:

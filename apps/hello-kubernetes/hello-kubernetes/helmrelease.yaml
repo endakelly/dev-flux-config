@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: hello-kubernetes
-  namespace: apps
+  namespace: hello-kubernetes
 spec:
   releaseName: hello-kubernetes
   chart:
@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: hello-kubernetes-charts
-        namespace: apps
+        namespace: hello-kubernetes
   interval: 5m
   values:
     service:
