@@ -6,6 +6,10 @@ metadata:
 spec:
   interval: 10m
   path: ./apps/hello-kubernetes/staging/base
+  sourceRef:
+    kind: GitRepository
+    name: dev-team
+    namespace: dev-team
   postBuild:
     substitute:
       NAMESPACE: "hello-kubernetes"
