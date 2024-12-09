@@ -5,7 +5,7 @@ metadata:
   namespace: dev-team
 spec:
   interval: 10m
-  path: ./apps/hello-kubernetes/staging/00
+  path: ./apps/hello-kubernetes/staging/base
   postBuild:
     substitute:
       NAMESPACE: "hello-kubernetes"
