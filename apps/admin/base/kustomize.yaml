@@ -9,3 +9,8 @@ spec:
     substitute:
       NAMESPACE: "admin"
       WI_NAME: admin
+  interval: 10m0s
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
