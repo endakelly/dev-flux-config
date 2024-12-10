@@ -5,6 +5,3 @@ resources:
 
 patches:
 - path: ../../../apps/flux-system/staging/00/kustomize.yaml
-  target:
-    kind: Kustomization
-    name: dev-team
