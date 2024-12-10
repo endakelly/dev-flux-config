@@ -7,5 +7,10 @@ spec:
   chart:
     spec:
       version: ">=1.0.0-alpha"
+      chart: podinfo
+      sourceRef:
+        kind: HelmRepository
+        name: podinfo
+  interval: 5m
   values:
     replicaCount: 1
