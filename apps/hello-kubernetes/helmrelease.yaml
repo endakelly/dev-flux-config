@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: hello-kubernetes-charts
-        namespace: hello-kubernetes
+        namespace: flux-system
   interval: 5m
   values:
     service:
