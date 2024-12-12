@@ -5,6 +5,10 @@ metadata:
   name: admin
   namespace: flux-system
 spec:
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
   interval: 10m0s
   path: ./apps/admin/${ENVIRONMENT}/${CLUSTER}
   postBuild:
