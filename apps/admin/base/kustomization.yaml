@@ -3,3 +3,12 @@ kind: Kustomization
 resources:
 # - ../../base
 - kustomize.yaml
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /metadata/name
+        value: admin 
+    target:
+      kind: Namespace
+      version: v1
