@@ -4,8 +4,3 @@ resources:
 # - ../../hello-kubernetes
 - ../../base/
 
-patches:
-  - path: ../../../base/kustomize.yaml
-    target:
-      kind: Kustomization
-      annotationSelector: hmcts.github.com/kustomize-defaults != disabled
