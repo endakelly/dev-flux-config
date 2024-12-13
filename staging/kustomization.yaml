@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
 - ../apps/admin/staging/00
 - ../apps/admin2/staging/00
+- ../apps/base
