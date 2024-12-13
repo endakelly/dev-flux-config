@@ -10,7 +10,7 @@ spec:
     kind: GitRepository
     name: dev-team
   interval: 10m0s
-  path: ./apps/admin/staging/00
+  path: ./apps/admin/${ENVIRONMENT}/${CLUSTER}
   postBuild:
     substitute:
       NAMESPACE: "admin"
