@@ -5,10 +5,12 @@ resources:
 - kustomize.yaml
 
 patches:
-  - patch: |-
-      - op: replace
-        path: /metadata/name
-        value: admin 
-    target:
-      kind: Namespace
-      version: v1
+  # - patch: |-
+  #     - op: replace
+  #       path: /metadata/name
+  #       value: admin 
+  #   target:
+  #     kind: Namespace
+  #     version: v1
+
+- path: kustomize.yaml
