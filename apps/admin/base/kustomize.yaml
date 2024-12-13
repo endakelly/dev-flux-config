@@ -10,7 +10,7 @@ spec:
     kind: GitRepository
     name: flux-system
   interval: 10m0s
-  path: ../apps/admin/staging/00
+  path: ./apps/admin/staging/00
   postBuild:
     substitute:
       NAMESPACE: "admin"
