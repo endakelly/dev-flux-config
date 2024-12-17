@@ -5,13 +5,10 @@ resources:
 - kustomize.yaml
 
 patches:
-- path: ../../../clusters/base/flux-system/kustomize.yaml
-
-# patches:
-#   - patch: |-
-#       - op: replace
-#         path: /metadata/name
-#         value: admin 
-#     target:
-#       kind: Namespace
-#       version: v1
+  - patch: |-
+      - op: replace
+        path: /metadata/name
+        value: admin 
+    target:
+      kind: Namespace
+      version: v1
