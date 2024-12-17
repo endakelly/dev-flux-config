@@ -4,7 +4,7 @@ resources:
 - ../../base
 
 patches:
-- path: kustomize.yaml
+- path: ../../../clusters/base/flux-system/kustomize.yaml
 
 # patches:
 #   - patch: |-
